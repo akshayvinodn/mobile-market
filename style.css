@@ -1,0 +1,29 @@
+body{
+     background-color:black;
+}
+h1{
+    color:red;
+    margin-left:1000;
+}
+input{
+    
+      color:teal;
+      margin-left:1000;
+
+}
+button{
+    color:blue;
+    margin-left:1000;
+}
+
+label{
+    color:darkgreen;
+}
+
+table{
+    color:red;
+}
+form{
+   /* margin-left: 1000px;  */
+  display:block;
+}

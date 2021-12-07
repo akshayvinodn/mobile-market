@@ -1,0 +1,34 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %} ">
+<body>
+  
+<h1>REGISTER</h1>
+<form action="{% url 'index' %}" method="POST">
+  <img src="{% static 'image/pic.jpg' %}" alt="Italian " width="400" height="300">
+    {% csrf_token %}
+    <table>
+      <p>PLEASE FILL </p>
+      <tr>
+      <td>
+      <label for="email"><b>Email</b></label></td>
+      <td> <input type="text" placeholder="Enter Email" name="email" id="email" required>
+      </td>
+      </tr>
+      <tr>
+      <td>
+      <label for="psw"><b>Password</b></label></td>
+      <td><input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      </td >
+      </tr>
+      <tr>
+      <td>   
+      <label for="psw-repeat"><b>Repeat Password</b></label></td>
+      <td><input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      </td>
+      </tr>
+      <tr><td><button type="submit" class="registerbtn">Register</button></td></tr>
+      
+    </table>
+  
+  </form>
+</body>
